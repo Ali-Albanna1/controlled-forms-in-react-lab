@@ -60,7 +60,7 @@ function Bookshelf () {
   <div className="bookCardsDiv">
     {/* Book cards will display here */}
     <h1>ALL BOOKS</h1>
-    {books.map((oneBook)=> <div>
+    {books.map((oneBook)=> <div key={oneBook.title}>
        <p>Title: {oneBook.title}</p>
        <p>Author: {oneBook.author}</p>
     </div>)}
